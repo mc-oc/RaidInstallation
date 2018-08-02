@@ -1,5 +1,5 @@
-# OpenComputers
-Collection of OpenComputers programs for Minecraft
+# OpenComputers - Raid Installation
+Opencraft's (mc-oc) OpenComputers Programs specifically packaged for RAID hosting and installations.
 
 GitHub https://github.com/mc-oc
 
@@ -11,6 +11,9 @@ Website http://www.minecraftopencraft.com
 * `remote-door-controller`
   * Remote Door Controller Network Service
 
+*Please notice that this package may be used for development purposes by the owner and therefore could contain 
+incomplete and buggy programs.*
+
 ## Raid Installation
 
 #### Preparing Raid
@@ -19,9 +22,7 @@ Using a host machine that is connected to a raid device, has an internet card an
 
 `oppm install gitrepo`
 
-`mkdir /mnt/<raid>/`
-
-`gitrepo mc-oc/OpenComputers /mnt/<raid>/`
+`gitrepo mc-oc/RaidInstallation /mnt/<raid>/`
 
 
 #### Installing On Networked Device
@@ -40,3 +41,4 @@ On a networked host machine that can see the raid device. Perform the following.
  `man light-service`
  
  `man light-cli`
+ 
