@@ -1,4 +1,4 @@
--- Leash Drone v0.2
+-- Leash Drone
 -- This drone bios will fly to a position and leash an animal
 -- Requires Leash Upgrade and Navigation Upgrade
 

@@ -1,0 +1,17 @@
+NAME
+  leash-drone - Leash drone BIOS
+
+SYNOPSIS
+  leash-drone
+
+DESCRIPTION
+  The leash drone will scan a square block area attempting to leash any entity
+
+  This program requires a Wireless Card, Leash Upgrade and Navigation Upgrade
+
+INSTALLATION
+
+  1. Input EEPROM into computer
+  2. cp leash-drone.lua bios.lua
+  3. flash bios.lua leash-drone
+  4. insert eeprom into drone case t2 build

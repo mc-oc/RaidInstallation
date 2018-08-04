@@ -1,0 +1,23 @@
+NAME
+  drone-cli - Drone tablet client
+
+SYNOPSIS
+  drone-cli <yes/no> <block_area>
+
+DESCRIPTION
+  This drone program will control the leash drone. The leash drone will scan a square block area attempting to leash any entity
+
+  This program requires a Wireless Card
+
+OPTIONS
+
+  <monitor_messages>   Monitor status from drone. Yes|no 1|0
+  <block_area>         Square block area. Ex 10
+
+EXAMPLES
+  drone-cli yes 5
+  drone-cli 1 5
+  drone-cli 1 unleash
+  drone-cli no 10
+  drone-cli 0 10
+  drone-cli 0 unleash

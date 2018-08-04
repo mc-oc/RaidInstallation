@@ -46,7 +46,7 @@ local bc_listener = args[1]
 local area = args[2]
 
 if not area or not bc_listener then
-  print("Usage: drone-cli <monitor_messages> <area_size>\n")
+  print("Usage: drone-cli <monitor_messages> <block_area>\n")
   print("Examples")
   print("-----------")
   print("  drone-cli yes 5")

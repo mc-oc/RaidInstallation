@@ -1,0 +1,38 @@
+# leash-drone
+*The leash drone will scan a square block area attempting to leash any entity*
+
+## Synopsis
+`drone-cli <monitor_messages> <block_area>`
+
+## Description
+The drone-cli program allows the player to control their drone via tablet.
+The leash-drone bios may be flash onto a drone to be controlled.
+
+## Requirements
+* Wireless card
+* Leash Upgrade
+* Navigation Upgrade
+* Drone Case T2
+* T1 Memory
+* T1 CPU
+* EEPROM
+* Tablet
+
+## Manuals
+`man drone-clie`
+
+`man leash-drone`
+
+## BIOS Installation
+  1. Input EEPROM into computer
+  2. cp leash-drone.lua bios.lua
+  3. flash bios.lua leash-drone
+  4. insert eeprom into drone case t2 build
+
+## Client Examples
+`drone-cli yes 5`
+`drone-cli 1 5`
+`drone-cli 1 unleash`
+`drone-cli no 10`
+`drone-cli 0 10`
+`drone-cli 0 unleash`
