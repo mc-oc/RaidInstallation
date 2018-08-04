@@ -19,7 +19,7 @@ The leash-drone bios may be flash onto a drone to be controlled.
 * Tablet
 
 ## Manuals
-`man drone-cli`
+`man drone-clie`
 
 `man leash-drone`
 
