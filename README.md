@@ -10,7 +10,9 @@ Website http://www.minecraftopencraft.com
   * Remote Light Controller Network Service.
 * `remote-door-controller`
   * Remote Door Controller Network Service
-
+* `lease-drone`
+  * Lease drone. This drone will scan a square block area attempting to leash any entity
+  
 *Please notice that this package may be used for development purposes by the owner and therefore could contain 
 incomplete and buggy programs.*
 
