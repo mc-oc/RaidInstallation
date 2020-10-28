@@ -33,6 +33,8 @@ print("Watching for motion....")
 
 
 -- Start Service
+local stopMe = false
+local running = false
 
 while not stopMe do
 
@@ -44,22 +46,23 @@ while not stopMe do
   print("relativeZ: " .. relativeZ)
   print("entityName: " .. entityName)
   
-  if running == on then
+  if not running and entityName then
     rs.setOutput(sides.right, 10)
     rs.setOutput(sides.left, 10)
     rs.setOutput(sides.front, 10)
     rs.setOutput(sides.back, 10)
+    running = true
   end
 
-  if running == off then
+  if running and entityName then
     rs.setOutput(sides.right, 0)
     rs.setOutput(sides.left, 0)
     rs.setOutput(sides.front, 0)
     rs.setOutput(sides.back, 0)
+    running = false
   end
   
   -- sleep until the user interrupts the program with CTRL + C
-  local stopMe = false
   event.listen("interrupted", function() stopMe = true; end)
-  while not stopMe do os.sleep(0.1) end
+  os.sleep(0.1)
 end
