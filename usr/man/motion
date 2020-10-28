@@ -1,0 +1,8 @@
+NAME
+  motion - Motion sensor controlled red stone lamps
+
+DESCRIPTION
+  This motion sensor program will control red stone lamps 
+
+  Requirements: component:redstone, block:motion_sensor
+  
