@@ -15,6 +15,13 @@ end
 
 local motion_sensor = component.motion_sensor
 
+if not component.isAvailable("redstone") then
+    io.stderr:write("This program requires a redstone card or redstone I/O block.\n")
+    return 1
+end
+
+local rs = component.redstone
+
 -- Intro
 
 print("****************************")
