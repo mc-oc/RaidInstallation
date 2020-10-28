@@ -5,6 +5,7 @@
 
 local component = require("component")
 local event = require("event")
+local sides = require("sides")
 
 -- Component Verification
 
@@ -44,11 +45,17 @@ while not stopMe do
   print("entityName: " .. entityName)
   
   if running == on then
-    rs.setOutput(side, 15)
+    rs.setOutput(sides.right, 10)
+    rs.setOutput(sides.left, 10)
+    rs.setOutput(sides.front, 10)
+    rs.setOutput(sides.back, 10)
   end
 
   if running == off then
-    rs.setOutput(side, 0)
+    rs.setOutput(sides.right, 0)
+    rs.setOutput(sides.left, 0)
+    rs.setOutput(sides.front, 0)
+    rs.setOutput(sides.back, 0)
   end
   
   -- sleep until the user interrupts the program with CTRL + C
