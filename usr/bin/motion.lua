@@ -52,6 +52,7 @@ while not stopMe do
     rs.setOutput(sides.front, 10)
     rs.setOutput(sides.back, 10)
     running = true
+    entityName = nil
   end
 
   if running and entityName then
@@ -60,9 +61,10 @@ while not stopMe do
     rs.setOutput(sides.front, 0)
     rs.setOutput(sides.back, 0)
     running = false
+    entityName = nil
   end
   
   -- sleep until the user interrupts the program with CTRL + C
   event.listen("interrupted", function() stopMe = true; end)
-  os.sleep(0.1)
+  os.sleep(0.5)
 end
