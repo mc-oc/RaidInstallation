@@ -1,0 +1,11 @@
+NAME
+  keypad_entry - OpenSecurity + OpenComputers keypad door controller
+
+DESCRIPTION
+  This drone program will control a door using the OpenSecurity keypad and an OpenComputer
+
+  Requirements:
+    component:redstone, 
+    component:os_keypad
+    event
+    sides
