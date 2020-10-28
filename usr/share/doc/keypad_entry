@@ -1,0 +1,21 @@
+# keypad_entry
+*The keypad_entry program will allow door access via keypad
+
+## Description
+The keypad_entry program allows users to control door access 
+via an OpenSecurity block:keypad component connect to an OpenComputer
+
+## Requirements
+* Computer Case T3
+* T3 Memory
+* T3 CPU
+* EEPROM
+* T3 Drive
+* OpenOS Floppy
+* OpenSecurity Keypad
+* Keyboard
+* T3 Screen
+* Redstone Card
+* OpenComputer Cable
+* IC2 Charge Pad (BatBox)
+* IC2 Solar Panel
